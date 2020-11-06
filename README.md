@@ -1,4 +1,6 @@
-# dashboard
+# Dashboard Vuejs
+
+Basic Dashboard in Vuejs and Bootstrap
 
 ## Project setup
 ```
