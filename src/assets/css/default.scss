@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+
+$primaryOne: #0052cc;
+$primaryTwo: #FF000A;
+$primaryThree: #091e42;
+$primaryFour: #FFFFFF;
+
+$secondaryOne: #36B37E;
+$secondaryTwo: #FF000A;
+$secondaryThree: #6554C0;
+
+$neutralDarkOne: #091e42;
+$neutralDarkTwo: #172b4d;
+$neutralDarkThree: #253858;
+$neutralDarkFour: #344563;
+$neutralDarkFive: #42526e;
+
+$midOne: #505F79;
+$midTwo: #5E6C84;
+$midThree: #6B778C;
+$midFour: #97A0AF;
+$midFive: #A5ADBA;
+$midSix: #b3bac5;
+
+$lightColorOne: #C1C7D0;
+$lightColorTwo: #DFE1E6;
+$lightColorThree: #EBECF0;
+$lightColorFour: #F4F5F7;
+$lightColorFive: #FAFBFC;
+
+body * {
+  font-family: Montserrat, 'sans-serif';
+}
+
+.card-ma {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+  border-radius: 8px;
+  padding: 18px;
+  .top-title {
+    font-size: 18px;
+    color: #2C2C2C;
+    margin-bottom: 22px;
+  }
+  .title {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .separator {
+    border: 1px solid #D6D6D6;
+    margin: 26px 0 35px;
+    opacity: 0.7;
+  }
+}
+.form-check {
+  padding-top: 6px;
+  label {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.star {
+  padding: 15px;
+  background-image: url("../image/icon/star.svg");
+  background-repeat: no-repeat;
+}
+.checked-star {
+  padding: 15px;
+  background-image: url("../image/icon/star-checked.svg");
+  background-repeat: no-repeat;
+}
+
+.primaryButton {
+  margin: 20px 0;
+  width: 100%;
+  color: white;
+  background: $primaryThree;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+  border-radius: 8px;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  height: 59px;
+}
+
+.wishilistButton {
+  margin: 5px 0;
+  width: 100%;
+  color: #2C2C2C;
+  font-weight: 600;
+  background: $lightColorOne;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+  border-radius: 8px;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  height: 45px;
+  &:before {
+    content: '';
+    background-image: url("../image/icon/heart.svg");
+    background-repeat: no-repeat;
+    padding: 9px;
+    position: relative;
+    top: 10px;
+    left: -4px;
+  }
+}
+
+.addButton {
+  margin: 5px 0;
+  width: 100%;
+  color: white;
+  font-weight: 600;
+  background: $neutralDarkTwo;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+  border-radius: 8px;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  height: 45px;
+  &:before {
+    content: '';
+    background-image: url("../image/icon/shopping-bag.svg");
+    background-repeat: no-repeat;
+    padding: 9px;
+    position: relative;
+    top: 8px;
+    left: -4px;
+  }
+}
+
+
+.dropdownPrimary-ma button {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+  border-radius: 8px;
+  color: #2C2C2C;
+  border: none;
+  &:hover, &:active, &:checked, &:visited, &:focus, &:focus-visible {
+    background: #FFFFFF;
+    color: #2C2C2C;
+  }
+
+}
+
+.fill-icon {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+

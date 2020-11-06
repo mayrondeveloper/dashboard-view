@@ -1,0 +1,135 @@
+<template>
+  <div class="card-ma card-product my-4">
+    <div class="row">
+      <div class="p-4 d-flex flex-row">
+        <div class="image-product pl-1">
+          <img src="@/assets/image/beats-headphones.png" alt="">
+        </div>
+      </div>
+      <div class="col mt-md-4">
+        <div class="description d-flex flex-column text-left px-3">
+          <div class="name-product">Apple Watch Series 4 GPS</div>
+          <div class="by">By <span>Apple</span></div>
+          <div
+            class="text pb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+            a type specimen book.
+          </div>
+        </div>
+      </div>
+      <div class="col info-products text-center justify-content-center">
+        <div class="p-3 d-flex flex-column">
+          <div class="d-flex flex-column align-self-center">
+            <div class="rank"><span>3.4</span><img src="@/assets/image/icon/star-w.svg" alt=""></div>
+            <div class="price">$399</div>
+            <div class="cart"><img src="@/assets/image/icon/shopping-cart.svg" alt="">Free Shipping</div>
+            <div class="buttons">
+              <div>
+                <button class="wishilistButton">Whishlist</button>
+              </div>
+              <div>
+                <button class="addButton">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</template>
+
+<script>
+export default {
+  name: "product",
+  data() {
+    return {
+      n: null
+    }
+  }
+}
+</script>
+
+<style scoped lang="scss">
+.info-products {
+  border-left: 1px solid #DADADA;
+  @media (max-width: 575.98px) {
+    border: none;
+  }
+}
+
+.card-product {
+  padding: 0;
+}
+
+.buttons {
+  margin-top: 14px;
+
+  button {
+    width: 186px;
+  }
+}
+
+.rank {
+  background: #787878;
+  border-radius: 3px;
+  color: white;
+  width: 60px;
+  font-size: 14px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  position: absolute;
+  top: 18px;
+  right: 35px;
+
+  span {
+    margin-right: 3px;
+  }
+}
+
+.price {
+  margin-top: 36px;
+  font-size: 18px;
+  color: #2C2C2C;
+}
+
+.cart {
+  font-size: 14px;
+
+  img {
+    position: relative;
+    top: -3px;
+    margin-right: 10px;
+  }
+}
+
+.description {
+  padding-top: 8px;
+
+  .name-product {
+    font-size: 16px;
+    color: #2C2C2C;
+  }
+
+  .by {
+    font-size: 12px;
+    font-weight: 300;
+    color: #7E7E7E;
+    margin-top: 4px;
+    margin-bottom: 10px;
+
+    span {
+      font-weight: 500;
+    }
+
+    .text {
+      font-size: 14px;
+      color: #2C2C2C;
+      font-weight: 300;
+    }
+
+  }
+}
+
+</style>
