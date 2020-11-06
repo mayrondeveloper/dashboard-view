@@ -1,12 +1,12 @@
 <template>
   <div class="card-ma card-product my-4">
     <div class="row">
-      <div class="p-4 d-flex flex-row">
+      <div class="py-4 pl-4 d-flex flex-row">
         <div class="image-product pl-1">
           <img src="@/assets/image/beats-headphones.png" alt="">
         </div>
       </div>
-      <div class="col mt-md-4">
+      <div class="col-sm-12 col-md mt-md-4">
         <div class="description d-flex flex-column text-left px-3">
           <div class="name-product">Apple Watch Series 4 GPS</div>
           <div class="by">By <span>Apple</span></div>
@@ -16,7 +16,7 @@
           </div>
         </div>
       </div>
-      <div class="col info-products text-center justify-content-center">
+      <div class="info-products text-center justify-content-center">
         <div class="p-3 d-flex flex-column">
           <div class="d-flex flex-column align-self-center">
             <div class="rank"><span>3.4</span><img src="@/assets/image/icon/star-w.svg" alt=""></div>
@@ -51,11 +51,17 @@ export default {
 
 <style scoped lang="scss">
 .info-products {
+  margin: 0 auto;
+  width: 240px;
   border-left: 1px solid #DADADA;
   @media (max-width: 575.98px) {
     border: none;
   }
+  @media (max-width: 934px) {
+    border: 1px solid white;
+  }
 }
+
 
 .card-product {
   padding: 0;
@@ -79,9 +85,8 @@ export default {
   display: flex;
   justify-content: center;
   align-content: flex-end;
-  position: absolute;
-  top: 18px;
-  right: 35px;
+  position: relative;
+  align-self: end;
 
   span {
     margin-right: 3px;
@@ -89,7 +94,7 @@ export default {
 }
 
 .price {
-  margin-top: 36px;
+  margin-top: 20px;
   font-size: 18px;
   color: #2C2C2C;
 }

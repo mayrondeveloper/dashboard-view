@@ -21,9 +21,18 @@ export default {
 }
 </script>
 <style lang="scss">
-.products {
-  @media (max-width: 1450px) {
+.dropdown-filter {
+  opacity: 0;
+}
+@media (max-width: 1500px) {
+  .products {
     flex-direction: column;
+  }
+  .filters {
+    display: none;
+  }
+  .dropdown-filter {
+    opacity: 1;
   }
 }
 </style>

@@ -11,6 +11,11 @@ import Sidenav from "@/components/sidenav";
 
 export default {
   name: 'App',
+  data() {
+    return {
+      menuOpen: false
+    }
+  },
   components: {
     Sidenav,
     Dashboard

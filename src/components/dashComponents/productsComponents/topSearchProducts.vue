@@ -1,11 +1,14 @@
 <template>
   <div>
     <div class="d-flex flex-row justify-content-lg-between row no-gutters">
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-6 col-12">
         <div class="top-title">7,618 results found in 5ms</div>
       </div>
-      <div class="col-md-6 col-sm-12 mt-sm-5 mt-md-0">
-        <div class="d-flex flex-row align-items-center icons-top justify-content-md-end justify-content-sm-start">
+      <div class="col-md-6 col-12 mt-md-0">
+        <div class="d-flex flex-row align-items-center icons-top justify-content-md-end justify-content-start pt-5 pt-md-0">
+          <div class="mr-2">
+            <button class="filterButton" v-on:click="modal">Filters</button>
+          </div>
           <div>
             <b-dropdown id="dropdown-1" text="Default" style="height: 40px; padding-right: 10px;"
                         class="m-md-2 dropdownPrimary-ma">
@@ -24,11 +27,16 @@
 
 <script>
 export default {
-  name: "topSearchProducts"
+  name: "topSearchProducts",
+  methods: {
+    modal() {
+      this.$bvModal.show('modal-1')
+    }
+  }
 }
 </script>
 
-<style scoped>
+<style>
 .icons-top {
   align-items: center;
   position: relative;
