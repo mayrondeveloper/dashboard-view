@@ -5,8 +5,9 @@
         <div class="top-title">7,618 results found in 5ms</div>
       </div>
       <div class="col-md-6 col-12 mt-md-0">
-        <div class="d-flex flex-row align-items-center icons-top justify-content-md-end justify-content-start pt-5 pt-md-0">
-          <div class="mr-2">
+        <div
+          class="d-flex flex-row align-items-center icons-top justify-content-md-end justify-content-start pt-5 pt-md-0">
+          <div class="mr-2 filter-button">
             <button class="filterButton" v-on:click="modal">Filters</button>
           </div>
           <div>
@@ -42,5 +43,15 @@ export default {
   position: relative;
   top: -29px;
   justify-content: end;
+}
+
+.filter-button {
+  display: none;
+}
+
+@media (max-width: 1500px) {
+  .filter-button {
+    display: flex !important;
+  }
 }
 </style>

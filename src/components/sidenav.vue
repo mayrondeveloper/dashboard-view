@@ -122,6 +122,8 @@ export default {
 
 .active {
   margin-left: 0 !important;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
 }
 
 .mobile-menu {
