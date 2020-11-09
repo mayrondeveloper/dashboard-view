@@ -11,3 +11,6 @@ npm install
 ```
 npm run serve
 ```
+
+
+##Run project in serve mode
