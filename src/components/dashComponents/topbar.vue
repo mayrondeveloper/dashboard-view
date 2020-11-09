@@ -31,7 +31,7 @@
       </ul>
     </div>
     <div class="mobile-icon pr-3 d-none">
-        <img src="@/assets/image/icon/Oval.svg" alt="" @click="visibleMobile">
+      <img src="@/assets/image/icon/Oval.svg" alt="" @click="visibleMobile">
     </div>
 
     <div v-if="isVisible" class="card-ma mobile-card d-flex flex-column-reverse justify-content-center align-items-end">
@@ -49,9 +49,6 @@
               <div class="name">John Doe</div>
               <span class="status">Avaiable</span>
             </div>
-<!--            <div>-->
-<!--              <img src="@/assets/image/icon/Oval.svg" alt="">-->
-<!--            </div>-->
           </div>
         </div>
       </div>
@@ -81,7 +78,7 @@ export default {
     display: flex !important;
   }
   .right-elements {
-   display: none !important;
+    display: none !important;
   }
 }
 
@@ -100,6 +97,7 @@ export default {
 
   .sample {
     position: relative;
+
     &:before {
       content: "";
       display: inline-block;
@@ -136,6 +134,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   color: #36B37E;
+
   ul {
     display: flex;
     flex-direction: row;
@@ -143,7 +142,6 @@ ul {
     padding: 0 20px;
     margin: 0;
     align-items: center;
-
     li {
       padding: 0 5px;
     }
@@ -169,10 +167,11 @@ ul {
     justify-content: flex-end;
     color: #0052cc;
     font-weight: 500;
+
     .id {
       display: flex;
       flex-direction: column;
-      align-items: end;
+      align-items: flex-end;
       margin-right: 10px;
 
       .name {
