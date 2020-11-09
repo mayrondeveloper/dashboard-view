@@ -40,7 +40,7 @@
         <div class="separator"></div>
         <div class="title">Brand</div>
         <b-form-group class="mt-2 elements" label="">
-          <b-form-checkbox-group v-model="selected" plain stacked>
+          <b-form-checkbox-group v-model="selected2" plain stacked>
             <b-form-checkbox value="orange">Insigni<span>220</span></b-form-checkbox>
             <b-form-checkbox value="apple">Samsung<span>120</span></b-form-checkbox>
             <b-form-checkbox value="pineapple">Apple<span>320</span></b-form-checkbox>
@@ -97,6 +97,7 @@
           </div>
         </div>
       </div>
+      <button class="primaryButton">Clear all Filters</button>
     </div>
     <b-modal id="modal-1" title="Filters">
       <div class="">
@@ -207,6 +208,7 @@ export default {
     return {
       value: 5,
       selected: [],
+      selected2: [],
       selectedRadio: 5
     }
   }
@@ -216,6 +218,7 @@ export default {
 <style scoped lang="scss">
 .card-filter {
   min-width: 292px;
+  color: #091e42;
 }
 
 .slidecontainer {
@@ -262,5 +265,10 @@ export default {
 
 .top-title.text-left {
   margin-bottom: 22px;
+}
+
+.form-check, .custom-control {
+  font-weight: 300;
+  margin-top: 10px;
 }
 </style>

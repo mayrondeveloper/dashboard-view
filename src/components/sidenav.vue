@@ -4,17 +4,17 @@
       <div class="header d-flex">
         <img src="@/assets/image/logo.svg" height="30px" alt="logo">
         <div class="fill-icon menu-item-icon ml-4 d-none" v-on:click="toggleMenu">
-          <img src="@/assets/image/icon/list.svg" alt="">
+          <img src="@/assets/image/icon/list.svg" alt="Menu Icon">
         </div>
       </div>
       <div class="links">
         <div class="link">
           <div class="icon"><img src="@/assets/image/icon/home.svg" alt=""></div>
-          <div class="nameLink">Dashboard</div>
+          <div class="nameLink active">Dashboard</div>
           <div class="arrow"><img src="@/assets/image/icon/arrow_bot.svg" alt=""></div>
         </div>
         <div class="link">
-          <div class="icon"><img src="@/assets/image/icon/circle.png" alt=""></div>
+          <div class="icon"><img src="@/assets/image/icon/circle.svg" alt=""></div>
           <div class="nameLink">eCommerce</div>
         </div>
       </div>
@@ -94,7 +94,7 @@
     </div>
     <div class="mobile-menu pr-3 d-none" v-show="!isVisible" @click="toggleMenu">
       <div class="fill-icon">
-        <img src="@/assets/image/icon/list.svg" alt="">
+        <img src="@/assets/image/icon/list.svg" alt="Menu icon">
       </div>
     </div>
   </div>
@@ -139,6 +139,7 @@ export default {
   .sidenav{
     margin-left: -280px;
     position: absolute !important;
+    height: auto !important;
   }
   .mobile-menu, .menu-item-icon {
     display: flex !important;
@@ -152,16 +153,16 @@ export default {
   position: relative;
   font-family: 'Montserrat', sans-serif;
   width: 280px;
-  background: #FFFFFF;
+  background: #FAFBFC;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.170509);
   display: flex;
-  color: #cecece;
-  height: auto;
+  color: #091e42;
   padding-left: 23px;
   flex-direction: column;
   align-items: flex-start;
   margin-right: 20px;
   z-index: 99;
+  height: 100%;
 
   .header {
     padding-top: 31px;
@@ -178,7 +179,7 @@ export default {
 
       .title {
         font-family: 'Montserrat', sans-serif;
-        color: #999999;
+        color: #091e42;
         font-size: 14px;
         text-transform: uppercase;
         font-weight: 600;
@@ -191,9 +192,10 @@ export default {
       flex-direction: row;
       margin-top: 12px;
       position: relative;
+      cursor: pointer;
 
       &:nth-of-type(1) {
-        background: #ECECEC;
+        background: #091e42;
         border-radius: 4px;
         padding: 8px 8px 8px 0;
         width: 236px;
@@ -210,8 +212,12 @@ export default {
 
       .nameLink {
         font-family: 'Montserrat', sans-serif;
-        color: #2C2C2C;
+        color: #172b4d;
         font-size: 15px;
+      }
+
+      .nameLink.active {
+        color: white;
       }
 
       .arrow {

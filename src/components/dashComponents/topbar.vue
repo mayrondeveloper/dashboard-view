@@ -135,7 +135,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  color: #36B37E;
   ul {
     display: flex;
     flex-direction: row;
@@ -167,7 +167,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
+    color: #0052cc;
+    font-weight: 500;
     .id {
       display: flex;
       flex-direction: column;

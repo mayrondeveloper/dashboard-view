@@ -8,19 +8,19 @@
       </div>
       <div class="col-sm-12 col-md mt-md-4">
         <div class="description d-flex flex-column text-left px-3">
-          <div class="name-product">Apple Watch Series 4 GPS</div>
-          <div class="by">By <span>Apple</span></div>
-          <div
-            class="text pb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-            a type specimen book.
+          <div class="name-product">{{ title }}</div>
+          <div class="by">By <span>{{ brand }}</span></div>
+          <div class="text pb-4">{{
+              description
+            }}
           </div>
         </div>
       </div>
       <div class="info-products text-center justify-content-center">
         <div class="p-3 d-flex flex-column">
           <div class="d-flex flex-column align-self-center">
-            <div class="rank"><span>3.4</span><img src="@/assets/image/icon/star-w.svg" alt=""></div>
-            <div class="price">$399</div>
+            <div class="rank" v-if="rank"><span>3.4</span><img src="@/assets/image/icon/star-w.svg" alt=""></div>
+            <div class="price">{{ price }}</div>
             <div class="cart"><img src="@/assets/image/icon/shopping-cart.svg" alt="">Free Shipping</div>
             <div class="buttons">
               <div>
@@ -43,8 +43,16 @@ export default {
   name: "product",
   data() {
     return {
-      n: null
+      n: null,
     }
+  },
+  props: {
+    title: String,
+    brand: String,
+    description: String,
+    price: String,
+    rank: Boolean
+    // eslint-disable-next-line vue/no-dupe-keys
   }
 }
 </script>
@@ -53,7 +61,7 @@ export default {
 .info-products {
   margin: 0 auto;
   width: 240px;
-  border-left: 1px solid #DADADA;
+  border-left: 1px solid #EBECF0;
   @media (max-width: 575.98px) {
     border: none;
   }
@@ -76,7 +84,7 @@ export default {
 }
 
 .rank {
-  background: #787878;
+  background: #FFAB00;
   border-radius: 3px;
   color: white;
   width: 60px;
@@ -96,11 +104,12 @@ export default {
 .price {
   margin-top: 20px;
   font-size: 18px;
-  color: #2C2C2C;
+  color: #091e42;
 }
 
 .cart {
   font-size: 14px;
+  color: #172b4d;
 
   img {
     position: relative;
@@ -114,13 +123,13 @@ export default {
 
   .name-product {
     font-size: 16px;
-    color: #2C2C2C;
+    color: #091e42;
   }
 
   .by {
     font-size: 12px;
     font-weight: 300;
-    color: #7E7E7E;
+    color: #091e42;
     margin-top: 4px;
     margin-bottom: 10px;
 

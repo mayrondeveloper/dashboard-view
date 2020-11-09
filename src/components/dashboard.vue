@@ -1,11 +1,12 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid pr-3 pr-sm-4">
     <topbar />
     <breadcrumb />
     <div class="row products">
       <filters />
       <product-list />
     </div>
+    <pagination />
   </div>
 </template>
 
@@ -14,10 +15,11 @@ import Topbar from "@/components/dashComponents/topbar";
 import Breadcrumb from "@/components/dashComponents/breadcrumb";
 import Filters from "@/components/dashComponents/filters";
 import ProductList from "@/components/dashComponents/productList";
+import Pagination from "@/components/dashComponents/common/pagination";
 
 export default {
   name: "Dashboard",
-  components: { ProductList, Filters, Breadcrumb, Topbar }
+  components: { Pagination, ProductList, Filters, Breadcrumb, Topbar }
 }
 </script>
 <style lang="scss">

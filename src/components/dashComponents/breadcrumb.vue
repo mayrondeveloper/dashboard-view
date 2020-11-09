@@ -3,7 +3,7 @@
     <div class="col-md-11 d-flex justify-content-start align-items-center flex-row columns">
       <div class="component">Card Actions</div>
       <img src="@/assets/image/icon/pipe.svg" height="32" alt="">
-      <img src="@/assets/image/icon/home.svg" height="18" alt="">
+      <img src="@/assets/image/icon/home-white.svg" height="18" alt="">
       <img src="@/assets/image/icon/chevrons-right.svg" height="10" alt="">
       <div class="breadcrumb-item">eCommerce</div>
       <img src="@/assets/image/icon/chevrons-right.svg" height="10" alt="">
@@ -27,7 +27,7 @@ export default {
 .circle {
   width: 40px;
   height: 40px;
-  background-color: #686868;
+  background-color: #091e42;
   border-radius: 20px;
   display: flex;
   cursor: pointer;

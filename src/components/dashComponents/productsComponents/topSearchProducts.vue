@@ -11,8 +11,8 @@
             <button class="filterButton" v-on:click="modal">Filters</button>
           </div>
           <div>
-            <b-dropdown id="dropdown-1" text="Default" style="height: 40px; padding-right: 10px;"
-                        class="m-md-2 dropdownPrimary-ma">
+            <b-dropdown id="dropdown-1" text="Default" style="padding-right: 10px; color: #36B37E;"
+                        class="m-md-2 dropdownPrimary-ma dropdown-ma-arrow d-flex text-left">
               <b-dropdown-item>First Action</b-dropdown-item>
               <b-dropdown-item>Second Action</b-dropdown-item>
               <b-dropdown-item>Third Action</b-dropdown-item>
@@ -37,7 +37,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .icons-top {
   align-items: center;
   position: relative;
@@ -47,6 +47,26 @@ export default {
 
 .filter-button {
   display: none;
+}
+
+.dropdown-ma-arrow {
+  button {
+    background: #091e42;
+    color: #36B37E;
+  }
+  &:hover {
+    color: #36B37E;
+  }
+  &:active {
+    color: #36B37E;
+  }
+  &:focus, &:focus-visible, &:focus-within {
+    color: #36B37E;
+  }
+}
+
+.dropdown-toggle::after {
+  border: none !important;
 }
 
 @media (max-width: 1500px) {
