@@ -179,7 +179,7 @@ export default {
 
       .title {
         font-family: 'Montserrat', sans-serif;
-        color: #091e42;
+        color: #FF000A;
         font-size: 14px;
         text-transform: uppercase;
         font-weight: 600;

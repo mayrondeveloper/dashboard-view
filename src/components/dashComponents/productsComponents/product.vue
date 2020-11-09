@@ -119,7 +119,7 @@ export default {
 }
 
 .description {
-  padding-top: 8px;
+  padding-top: 14px;
 
   .name-product {
     font-size: 16px;
@@ -129,20 +129,18 @@ export default {
   .by {
     font-size: 12px;
     font-weight: 300;
-    color: #091e42;
+    color: #FF000A;
     margin-top: 4px;
     margin-bottom: 10px;
 
     span {
       font-weight: 500;
     }
-
-    .text {
-      font-size: 14px;
-      color: #2C2C2C;
-      font-weight: 300;
-    }
-
+  }
+  .text {
+    font-size: 14px;
+    color: #172b4d;
+    font-weight: 300;
   }
 }
 

@@ -51,7 +51,7 @@ export default {
 
 .dropdown-ma-arrow {
   button {
-    background: #091e42;
+    background: #36b37e;
     color: #36B37E;
   }
   &:hover {

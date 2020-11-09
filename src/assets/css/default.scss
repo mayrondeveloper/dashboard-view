@@ -141,7 +141,7 @@ body * {
   width: 100%;
   color: $primaryFour;
   font-weight: 600;
-  background: $primaryOne;
+  background: $secondaryOne;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.135216);
   border-radius: 8px;
   text-transform: uppercase;
@@ -264,7 +264,7 @@ body * {
   display: flex;
   width: 150px;
   button {
-    background: $primaryOne;
+    background: $secondaryOne;
     color: $primaryFour;
     height: 40px;
   }
