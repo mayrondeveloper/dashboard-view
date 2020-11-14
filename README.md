@@ -11,3 +11,6 @@ npm install
 ```
 npm run serve
 ```
+
+
+### Obs: Run project in serve mode
