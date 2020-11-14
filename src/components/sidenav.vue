@@ -127,7 +127,7 @@ export default {
 }
 
 .mobile-menu {
-  position: fixed;
+  position: absolute;
   top: 10px;
   z-index: 9;
   left: -5px;
